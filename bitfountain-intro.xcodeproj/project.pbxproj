@@ -14,7 +14,6 @@
 		A416BCC919B643E70005CC3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A416BCC819B643E70005CC3F /* main.m */; };
 		A416BCCD19B643E70005CC3F /* brAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A416BCCC19B643E70005CC3F /* brAppDelegate.m */; };
 		A416BCD019B643E70005CC3F /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A416BCCE19B643E70005CC3F /* Main_iPhone.storyboard */; };
-		A416BCD319B643E70005CC3F /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A416BCD119B643E70005CC3F /* Main_iPad.storyboard */; };
 		A416BCD619B643E70005CC3F /* brViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A416BCD519B643E70005CC3F /* brViewController.m */; };
 		A416BCD819B643E70005CC3F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A416BCD719B643E70005CC3F /* Images.xcassets */; };
 		A416BCDF19B643E70005CC3F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A416BCDE19B643E70005CC3F /* XCTest.framework */; };
@@ -46,7 +45,6 @@
 		A416BCCB19B643E70005CC3F /* brAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = brAppDelegate.h; sourceTree = "<group>"; };
 		A416BCCC19B643E70005CC3F /* brAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = brAppDelegate.m; sourceTree = "<group>"; };
 		A416BCCF19B643E70005CC3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		A416BCD219B643E70005CC3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		A416BCD419B643E70005CC3F /* brViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = brViewController.h; sourceTree = "<group>"; };
 		A416BCD519B643E70005CC3F /* brViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = brViewController.m; sourceTree = "<group>"; };
 		A416BCD719B643E70005CC3F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -117,7 +115,6 @@
 				A416BCCB19B643E70005CC3F /* brAppDelegate.h */,
 				A416BCCC19B643E70005CC3F /* brAppDelegate.m */,
 				A416BCCE19B643E70005CC3F /* Main_iPhone.storyboard */,
-				A416BCD119B643E70005CC3F /* Main_iPad.storyboard */,
 				A416BCD419B643E70005CC3F /* brViewController.h */,
 				A416BCD519B643E70005CC3F /* brViewController.m */,
 				A416BCD719B643E70005CC3F /* Images.xcassets */,
@@ -232,7 +229,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A416BCD319B643E70005CC3F /* Main_iPad.storyboard in Resources */,
 				A416BCD819B643E70005CC3F /* Images.xcassets in Resources */,
 				A416BCD019B643E70005CC3F /* Main_iPhone.storyboard in Resources */,
 				A416BCC719B643E70005CC3F /* InfoPlist.strings in Resources */,
@@ -293,14 +289,6 @@
 				A416BCCF19B643E70005CC3F /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		A416BCD119B643E70005CC3F /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A416BCD219B643E70005CC3F /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		A416BCE719B643E70005CC3F /* InfoPlist.strings */ = {
@@ -395,6 +383,7 @@
 				GCC_PREFIX_HEADER = "bitfountain-intro/bitfountain-intro-Prefix.pch";
 				INFOPLIST_FILE = "bitfountain-intro/bitfountain-intro-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -408,6 +397,7 @@
 				GCC_PREFIX_HEADER = "bitfountain-intro/bitfountain-intro-Prefix.pch";
 				INFOPLIST_FILE = "bitfountain-intro/bitfountain-intro-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -471,6 +461,7 @@
 				A416BCF019B643E70005CC3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A416BCF119B643E70005CC3F /* Build configuration list for PBXNativeTarget "bitfountain-introTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +470,7 @@
 				A416BCF319B643E70005CC3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
