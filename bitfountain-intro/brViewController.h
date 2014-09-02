@@ -1,4 +1,4 @@
-//
+
 //  brViewController.h
 //  bitfountain-intro
 //
@@ -8,5 +8,9 @@
 #import <UIKit/UIKit.h>
 
 @interface brViewController : UIViewController
+
+@property (strong, nonatomic) IBOutlet UILabel *titleLabel;
+
+- (IBAction)buttonPressed:(id)sender;
 
 @end
